@@ -51,10 +51,11 @@ section{
 			margin-left: $margin-base*3;
 		}
 	}
-	.aside{
-		@extend .fondo-gray;
-		margin-top: $margin-base*2;
-	}
+	
+}
+.aside{
+	@extend .fondo-gray;
+	margin-top: $margin-base*2;
 }
 footer{
 	@extend .fondo-gray;
