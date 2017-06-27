@@ -1,1 +1,4 @@
 $col-1: 8.33%;
+@function column($n){
+	@return $n*($col-1);
+}

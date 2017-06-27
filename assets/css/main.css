@@ -1,10 +1,11 @@
-.fondo-gray, section .aside, footer {
+.fondo-gray, .contenedor-aside .aside, footer {
   background: #3e3f40;
   color: white;
   padding: 14px;
   text-align: center; }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0; }
 
@@ -14,27 +15,65 @@ header {
   header h1 {
     color: white; }
 
-section {
+.menu {
   padding: 14px; }
-  section ul {
+  .menu ul {
     list-style: none; }
-    section ul li {
+    .menu ul li {
       background: #3e3f40;
       color: white;
       padding: 14px;
       margin-bottom: 7px; }
-    section ul li:last-child {
+    .menu ul li:last-child {
       background: #c18f15; }
-  section div h1 {
+  @media (min-width: 700px) {
+    .menu {
+      width: 33.32%;
+      float: left; } }
+  @media (min-width: 1200px) {
+    .menu {
+      width: 24.99%; } }
+
+.lista {
+  padding: 14px; }
+  .lista h1 {
     margin-bottom: 14px;
     margin-top: 28px; }
-  section div p {
+  .lista p {
     margin-bottom: 14px; }
-  section div h4 {
+  .lista h4 {
     margin-bottom: 14px; }
-  section div ol {
+  .lista ol {
     margin-left: 42px; }
-  section .aside {
+  @media (min-width: 700px) {
+    .lista {
+      width: 66.64%;
+      float: left; } }
+  @media (min-width: 1200px) {
+    .lista {
+      width: 49.98%; } }
+
+.contenedor-aside {
+  padding: 14px; }
+  .contenedor-aside .aside {
     margin-top: 28px; }
+    .contenedor-aside .aside h2 {
+      margin-bottom: 7px; }
+    .contenedor-aside .aside p {
+      margin: 7px; }
+  @media (min-width: 700px) {
+    .contenedor-aside {
+      clear: both; } }
+  @media (min-width: 1200px) {
+    .contenedor-aside {
+      width: 24.99%;
+      float: left;
+      clear: none; } }
+
+footer {
+  padding: 28px; }
+  @media (min-width: 1200px) {
+    footer {
+      clear: both; } }
 
 /*# sourceMappingURL=main.css.map */

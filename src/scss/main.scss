@@ -12,6 +12,7 @@ $margin-base: 14px;
 }
 
 *{
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -22,7 +23,7 @@ header{
 		color: $text-white;
 	}
 }
-section{
+.menu{
 	padding: $padding-base;
 	ul{
 		list-style: none;
@@ -36,27 +37,65 @@ section{
 			background: $color-base;
 		}
 	}
-	div{
-		h1{
-			margin-bottom: $margin-base;
-			margin-top:  $margin-base*2;
+	@media(min-width:700px){
+		width: column(4);
+		float: left;
+	}
+	@media(min-width:1200px){
+		width: column(3);
+	}
+}
+	
+.lista{
+	padding: $padding-base;
+	h1{
+		margin-bottom: $margin-base;
+		margin-top:  $margin-base*2;
+	}
+	p{
+		margin-bottom: $margin-base;
+	}
+	h4{
+		margin-bottom: $margin-base;
+	}
+	ol{
+		margin-left: $margin-base*3;
+	}
+	@media(min-width:700px){
+		width: column(8);
+		float: left;
+	}
+	@media(min-width:1200px){
+		width: column(6);
+	}
+}
+
+.contenedor-aside{
+	padding: $padding-base;
+	.aside{
+		@extend .fondo-gray;
+		margin-top: $margin-base*2;
+		h2{
+			margin-bottom: $margin-base/2;
 		}
 		p{
-			margin-bottom: $margin-base;
-		}
-		h4{
-			margin-bottom: $margin-base;
-		}
-		ol{
-			margin-left: $margin-base*3;
+			margin: $margin-base/2;
 		}
 	}
-	
-}
-.aside{
-	@extend .fondo-gray;
-	margin-top: $margin-base*2;
-}
+	@media(min-width:700px){
+		clear:both;
+	}
+	@media(min-width:1200px){
+		width: column(3);
+		float: left;
+		clear: none;
+	}
+}	
+
 footer{
 	@extend .fondo-gray;
+	padding: $padding-base*2;
+	@media(min-width:1200px){
+		clear: both;
+	}
 }
